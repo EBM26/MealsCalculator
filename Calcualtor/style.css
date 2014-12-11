@@ -1,0 +1,68 @@
+body {
+	background-color: #3498db;
+	
+}
+#Img1 { 
+	border: 5px solid yellow;
+	margin-left: 80px;
+
+
+}
+
+#Img2 {
+	border: 5px solid yellow;
+	float: right;
+	margin-right: 80px;
+}
+
+h1 {
+	font-size: 40px;
+	color: red;
+	text-align: center;
+}
+p {
+	color: #f1c40f;
+	font-family: Rockwell Extra Bold;
+	font-size: 20px;
+	margin-left: 40px;
+
+}
+input {
+	border: 2px solid silver;
+	height: 22px;
+	width: 45px;
+	font-size: 20px;
+	color: #c0392b;
+	margin-left: 40px;
+
+}
+button {
+	background-color: orange;
+	color: white;
+	height: 50px;
+	width: 150px;
+	margin: 0 auto;
+    display: block;
+	font-size: 25px;
+}
+
+div {
+	font-size: 20px;
+	color: #c0392b;
+}
+
+#MCEH {
+	margin-left: 40px;
+}
+
+#MCER {
+	margin-left: 40px;
+}
+#Savings {
+	margin-left: 40px;
+}
+
+
+
+
+
