@@ -32,8 +32,9 @@ input {
 	height: 22px;
 	width: 45px;
 	font-size: 20px;
-	color: #c0392b;
+	color: black;
 	margin-left: 40px;
+	text-align: center;
 
 }
 button {
@@ -48,18 +49,36 @@ button {
 
 div {
 	font-size: 20px;
-	color: #c0392b;
+	color: black;
 }
 
 #MCEH {
 	margin-left: 40px;
+	height: 25px;
+	width: 90px;
+	background-color: white;
+	font-size: 22px;
+	text-align: center;
+	border: 2px solid silver;
 }
 
 #MCER {
 	margin-left: 40px;
+	height: 25px;
+	width: 90px;
+	background-color: white;
+	font-size: 22px;
+	text-align: center;
+	border: 2px solid silver;
 }
 #Savings {
 	margin-left: 40px;
+	height: 25px;
+	width: 90px;
+	background-color: white;
+	font-size: 22px;
+	text-align: center;
+	border: 2px solid silver;
 }
 
 
