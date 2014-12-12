@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app>
 <head>
 	<meta charset="UTF-8">
 	<title>Calculator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"/>
 	<script src="app.js"></script>
 	<link rel="stylesheet" href="style.css">
+	
 </head>
 
 <body>
 	<h1>Eating at Restaurants Calculator</h1>
 	<img src="restaurant.jpg" id ="Img1">
 	<img src="url.jpg" id = "Img2">
-	<div><p>Average Meal Cost at Home</p><input id="AMCH" type="text">$</div>
-	<div><p>Average Meal at a Restaurant</p><input id="AMR" type="text">$</div>
+	<div><p>Average Meal Cost at Home</p><input id="AMCH" type="text" ng-model="avgMealCostAtHome">$</div>
+	<div><p>Average Meal at a Restaurant</p><input id="AMR" type="text" ng-model="avgMealCostAtRest">$</div>
 	<p>Monthly Cost of Eating at Home</p>
-	<div id="MCEH"></div>
+	<div id="MCEH">{{ avgMealCostAtHome * 31 | currency }}</div>
 	<p>Monthly Cost of Eating at Restaurants</p>
-	<div id="MCER"></div>
+	<div id="MCER">{{ avgMealCostAtRest * 31 | currency }}</div>
 	<p>What You Will Be Saving By Eating at Home</p>
-	<div id="Savings"></div><br>
-	<button id="calculate">Calculate</button>
+	<div id="Savings">{{ (avgMealCostAtRest - avgMealCostAtHome) * 31 | currency }}</div><br>
+	
 </body>
 </html>
